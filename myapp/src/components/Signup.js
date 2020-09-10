@@ -4,8 +4,8 @@ import { API_URL } from "../constants";
 
 export default class Signup extends Component {
     state =  {
-        fname: "",
-        lname: "", 
+        first_name: "",
+        last_name: "", 
         username: "",
         email: "",
         password: "",
@@ -37,16 +37,16 @@ export default class Signup extends Component {
                         <form onSubmit={this.signUp} >
                         <div className="input-group">
                         <span><i className="fa fa-user" aria-hidden="true"></i></span>
-                                <input type="text" name="fname" 
-                                value={this.state.fname} 
+                                <input type="text" name="first_name" 
+                                value={this.state.first_name} 
                                 onChange={this.onChange}
                                 placeholder="First Name *" required/>
                                 </div>
 
                                 <div className="input-group">
                         <span><i className="fa fa-user" aria-hidden="true"></i></span>
-                                <input type="text" name="lname" 
-                                value={this.state.lname} 
+                                <input type="text" name="last_name" 
+                                value={this.state.last_name} 
                                 onChange={this.onChange}
                                 placeholder="Last Name *" required/>
 
